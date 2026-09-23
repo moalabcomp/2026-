@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#06162f">
+  <meta name="description" content="2026 모아경제TV 10만 구독자 달성 기원 한가위 이벤트">
+  <title>2026 모아경제TV 10만 구독자 달성 기원 한가위 이벤트</title>
+  <style>
+    :root {
+      --navy-950: #041126;
+      --navy-900: #071a38;
+      --navy-800: #0d2a52;
+      --blue: #1469ff;
+      --cyan: #31d7ff;
+      --gold: #f1c66d;
+      --gold-2: #ffe9ad;
+      --cream: #fffaf0;
+      --paper: #ffffff;
+      --ink: #142039;
+      --muted: #687083;
+      --red: #d74350;
+      --green: #176d5a;
+      --line: rgba(16, 44, 83, .12);
+      --shadow: 0 28px 80px rgba(2, 12, 31, .30);
+    }
+
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--navy-950); }
+    body {
+      min-height: 100%;
+      margin: 0;
+      padding: 18px 12px 44px;
+      overflow-x: hidden;
+      color: var(--ink);
+      font-family: Pretendard, SUIT, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background:
+        radial-gradient(circle at 18% 3%, rgba(56, 145, 255, .20), transparent 25rem),
+        radial-gradient(circle at 90% 18%, rgba(255, 214, 126, .13), transparent 25rem),
+        linear-gradient(160deg, #0b2a53 0%, #06172f 48%, #030d1d 100%);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      pointer-events: none;
+      opacity: .72;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.88) 0 1px, transparent 1.4px),
+        radial-gradient(circle, rgba(255,220,142,.66) 0 1px, transparent 1.5px);
+      background-size: 71px 71px, 109px 109px;
+      background-position: 8px 20px, 44px 47px;
+    }
+
+    button, input { font: inherit; }
+    button { -webkit-tap-highlight-color: transparent; }
+
+    .page-shell {
+      width: min(100%, 560px);
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 390px;
+      overflow: hidden;
+      padding: 24px 22px 112px;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 30px 30px 20px 20px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.05), transparent 52%),
+        linear-gradient(145deg, #124378 0%, #09254a 48%, #061731 100%);
+      box-shadow: 0 22px 65px rgba(0,0,0,.30);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      right: 27px;
+      width: 114px;
+      height: 114px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 34% 31%, rgba(255,255,255,.85) 0 4%, transparent 5%),
+        radial-gradient(circle at 64% 62%, rgba(167,117,45,.16) 0 10%, transparent 11%),
+        radial-gradient(circle at 38% 73%, rgba(167,117,45,.12) 0 7%, transparent 8%),
+        linear-gradient(145deg, #fff9df, #f0c66c);
+      box-shadow: 0 0 38px rgba(255,222,145,.58), 0 0 110px rgba(255,221,139,.22);
+      animation: moonFloat 5s ease-in-out infinite;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: -6%;
+      right: -6%;
+      bottom: -48px;
+      height: 170px;
+      background:
+        radial-gradient(100% 95% at 10% 100%, #16456a 0 54%, transparent 55%),
+        radial-gradient(100% 100% at 52% 100%, #0d3357 0 58%, transparent 59%),
+        radial-gradient(100% 95% at 91% 100%, #082744 0 56%, transparent 57%);
+      opacity: .98;
+    }
+
+    @keyframes moonFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .brand,
+    .hero-copy,
+    .hundred-k,
+    .hero-foot,
+    .hanok {
+      position: relative;
+      z-index: 2;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      width: fit-content;
+      max-width: calc(100% - 128px);
+      color: rgba(255,255,255,.92);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+
+    .brand-mark {
+      display: inline-grid;
+      width: 31px;
+      height: 31px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.38);
+      border-radius: 10px;
+      color: #07162f;
+      background: linear-gradient(145deg, #fff3c7, #e9b84e);
+      box-shadow: 0 8px 22px rgba(0,0,0,.20);
+      font-size: 15px;
+      font-weight: 950;
+    }
+
+    .hero-copy {
+      margin-top: 38px;
+      text-align: left;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #ffe6a7;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .15em;
+    }
+
+    .hero h1 {
+      max-width: 365px;
+      margin: 0;
+      font-size: clamp(29px, 7.8vw, 42px);
+      line-height: 1.13;
+      letter-spacing: -.055em;
+      text-shadow: 0 6px 22px rgba(0,0,0,.28);
+    }
+
+    .hero h1 strong {
+      color: #ffe6a7;
+      font-weight: 950;
+    }
+
+    .hundred-k {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 7px;
+      margin-top: 18px;
+      padding: 8px 15px 10px;
+      border: 1px solid rgba(90,211,255,.36);
+      border-radius: 999px;
+      background: rgba(3,15,35,.42);
+      box-shadow: inset 0 0 24px rgba(49,215,255,.08), 0 8px 24px rgba(0,0,0,.16);
+      backdrop-filter: blur(8px);
+    }
+
+    .hundred-k .number {
+      color: #65e3ff;
+      font-size: 30px;
+      font-weight: 1000;
+      letter-spacing: -.045em;
+      text-shadow: 0 0 18px rgba(49,215,255,.48);
+    }
+
+    .hundred-k .label {
+      color: rgba(255,255,255,.86);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .hero-foot {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 19px;
+    }
+
+    .hero-chip {
+      padding: 7px 11px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 999px;
+      color: rgba(255,255,255,.86);
+      background: rgba(255,255,255,.08);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .hanok {
+      position: absolute;
+      right: 22px;
+      bottom: 24px;
+      width: 135px;
+      height: 86px;
+      opacity: .86;
+    }
+
+    .hanok .roof,
+    .hanok .roof::before,
+    .hanok .roof::after {
+      position: absolute;
+      content: "";
+      background: #03172d;
+    }
+
+    .hanok .roof {
+      left: 7px;
+      top: 17px;
+      width: 120px;
+      height: 12px;
+      border-radius: 50% 50% 16% 16%;
+      transform: perspective(55px) rotateX(18deg);
+    }
+
+    .hanok .roof::before {
+      left: -13px;
+      top: 5px;
+      width: 31px;
+      height: 7px;
+      border-radius: 50%;
+      transform: rotate(-10deg);
+    }
+
+    .hanok .roof::after {
+      right: -13px;
+      top: 5px;
+      width: 31px;
+      height: 7px;
+      border-radius: 50%;
+      transform: rotate(10deg);
+    }
+
+    .hanok .house {
+      position: absolute;
+      left: 27px;
+      top: 29px;
+      width: 81px;
+      height: 44px;
+      border: 4px solid #03172d;
+      border-top-width: 6px;
+      background: rgba(255,226,157,.67);
+    }
+
+    .hanok .house::before,
+    .hanok .house::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #03172d;
+    }
+
+    .hanok .house::before { left: 25px; }
+    .hanok .house::after { right: 25px; }
+
+    .status-card {
+      position: relative;
+      z-index: 4;
+      margin: -30px 13px 0;
+      padding: 17px 18px;
+      overflow: hidden;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.23);
+      border-radius: 19px;
+      background: linear-gradient(135deg, #1469ff, #0c3f91);
+      box-shadow: 0 17px 38px rgba(3,18,45,.28);
+    }
+
+    .status-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,.16) 45%, transparent 70%);
+      transform: translateX(-120%);
+      animation: sheen 5.6s ease-in-out infinite;
+    }
+
+    @keyframes sheen {
+      0%, 70%, 100% { transform: translateX(-120%); }
+      83% { transform: translateX(120%); }
+    }
+
+    .status-card.before { background: linear-gradient(135deg, #354968, #1d2c47); }
+    .status-card.live { background: linear-gradient(135deg, #1469ff, #0c3f91); }
+    .status-card.closed { background: linear-gradient(135deg, #575e6c, #363b46); }
+
+    .status-label {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      opacity: .86;
+    }
+
+    .status-time {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(24px, 7vw, 32px);
+      font-weight: 1000;
+      letter-spacing: .025em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .section-card {
+      margin-top: 14px;
+      padding: 24px 19px;
+      border: 1px solid rgba(255,255,255,.68);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.99), rgba(255,252,244,.98));
+      box-shadow: var(--shadow);
+    }
+
+    .section-title {
+      margin: 0;
+      color: #13223d;
+      font-size: 24px;
+      font-weight: 1000;
+      letter-spacing: -.045em;
+    }
+
+    .section-desc {
+      margin: 8px 0 18px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1.62;
+    }
+
+    .prize-grid {
+      display: grid;
+      gap: 9px;
+    }
+
+    .prize {
+      display: grid;
+      grid-template-columns: 52px 1fr auto;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 12px;
+      text-align: left;
+      border: 1px solid rgba(16,52,94,.10);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 7px 18px rgba(12,36,73,.06);
+    }
+
+    .prize.rank-all {
+      border-color: rgba(20,105,255,.22);
+      background: linear-gradient(135deg, #f2f7ff, #ffffff);
+    }
+
+    .prize-icon {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      place-items: center;
+      border-radius: 14px;
+      background: linear-gradient(145deg, #fff6d5, #efd07e);
+      font-size: 25px;
+      box-shadow: 0 8px 17px rgba(160,105,21,.15);
+    }
+
+    .rank-all .prize-icon {
+      background: linear-gradient(145deg, #dff5ff, #9ddcff);
+    }
+
+    .prize-rank {
+      margin-bottom: 3px;
+      color: #0d4fac;
+      font-size: 12px;
+      font-weight: 950;
+    }
+
+    .prize-name {
+      color: #202b40;
+      font-size: 14px;
+      font-weight: 850;
+      line-height: 1.38;
+    }
+
+    .prize-count {
+      color: #8b6727;
+      font-size: 13px;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+
+    .rank-all .prize-count { color: #0d5eb4; }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      margin-top: 15px;
+    }
+
+    .timeline-item {
+      padding: 13px 11px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #fffaf0;
+      text-align: left;
+    }
+
+    .timeline-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #9a333d;
+      font-size: 12px;
+    }
+
+    .timeline-item span {
+      color: #4f5563;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .form-card {
+      margin-top: 14px;
+      padding: 25px 19px 22px;
+      border: 1px solid rgba(255,255,255,.68);
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .form-head-icon {
+      display: grid;
+      width: 74px;
+      height: 74px;
+      place-items: center;
+      margin: 0 auto 13px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #fff8d9, #eabc59 70%, #b77b20 71%);
+      box-shadow: 0 12px 26px rgba(176,112,17,.19);
+      font-size: 35px;
+    }
+
+    .field {
+      margin-top: 11px;
+      text-align: left;
+    }
+
+    .field label {
+      display: block;
+      margin: 0 0 7px 3px;
+      color: #4c5260;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .field input[type="text"],
+    .field input[type="tel"] {
+      width: 100%;
+      min-height: 52px;
+      padding: 13px 14px;
+      color: #1f293b;
+      border: 1px solid #d7dce5;
+      border-radius: 13px;
+      outline: none;
+      background: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .field input:focus {
+      border-color: #4888ee;
+      background: #fcfeff;
+      box-shadow: 0 0 0 4px rgba(20,105,255,.11);
+    }
+
+    .consent-box {
+      margin-top: 15px;
+      padding: 12px;
+      text-align: left;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #f8fafc;
+    }
+
+    .consent-all-row {
+      margin: -3px -3px 5px;
+      padding: 12px 10px !important;
+      border: 1px solid rgba(20,105,255,.18);
+      border-radius: 11px;
+      background: linear-gradient(135deg, #eef5ff, #f8fbff);
+      color: #162d50 !important;
+      font-size: 14px !important;
+      font-weight: 950 !important;
+    }
+
+    .consent-all-row small {
+      display: block;
+      margin-top: 2px;
+      color: #6c7890;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .consent-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      padding: 8px 3px;
+      color: #343b4a;
+      font-size: 13px;
+      font-weight: 780;
+      line-height: 1.45;
+      cursor: pointer;
+    }
+
+    .consent-row + .consent-row {
+      border-top: 1px dashed rgba(27,62,105,.12);
+    }
+
+    .consent-row input {
+      flex: 0 0 auto;
+      width: 19px;
+      height: 19px;
+      margin-top: 1px;
+      accent-color: #1469ff;
+    }
+
+    .required { color: #ca3340; font-weight: 950; }
+    .optional { color: #53637b; font-weight: 950; }
+
+    .consent-help {
+      margin: 3px 0 0 31px;
+      color: #7b8190;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    details.policy {
+      margin-top: 10px;
+      text-align: left;
+      border: 1px solid rgba(16,52,94,.10);
+      border-radius: 12px;
+      background: #fffdf7;
+    }
+
+    details.policy summary {
+      padding: 11px 12px;
+      color: #555c6a;
+      font-size: 12px;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    .policy-content {
+      padding: 0 12px 12px;
+      color: #666b77;
+      font-size: 11px;
+      line-height: 1.68;
+    }
+
+    .submit-btn {
+      position: relative;
+      display: inline-flex;
+      width: 100%;
+      min-height: 56px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 17px;
+      padding: 14px 18px;
+      overflow: hidden;
+      color: #fff;
+      border: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #156eff, #0a44a8);
+      box-shadow: 0 12px 25px rgba(15,84,197,.27);
+      font-size: 17px;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform .18s ease, filter .18s ease, box-shadow .18s ease;
+    }
+
+    .submit-btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      filter: saturate(1.08);
+      box-shadow: 0 16px 30px rgba(15,84,197,.32);
+    }
+
+    .submit-btn:active:not(:disabled) { transform: translateY(0); }
+    .submit-btn:disabled { opacity: .56; cursor: not-allowed; transform: none; }
+
+    .submit-btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,.2), transparent 80%);
+      transform: translateX(-120%);
+      transition: transform .45s ease;
+    }
+
+    .submit-btn:hover:not(:disabled)::after { transform: translateX(120%); }
+
+    .delivery-note {
+      margin-top: 13px;
+      padding: 11px 12px;
+      color: #795b25;
+      border-radius: 11px;
+      background: #fff6dc;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.55;
+    }
+
+    .result-card {
+      display: none;
+      margin-top: 14px;
+      padding: 34px 20px 31px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,.68);
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .result-card.active { display: block; animation: rise .42s ease; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-icon {
+      display: grid;
+      width: 88px;
+      height: 88px;
+      place-items: center;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #fff8d8, #ebbd59);
+      box-shadow: 0 13px 30px rgba(173,111,18,.22);
+      font-size: 42px;
+    }
+
+    .result-title {
+      margin: 0;
+      color: #104d9f;
+      font-size: 27px;
+      font-weight: 1000;
+      letter-spacing: -.04em;
+    }
+
+    .result-message {
+      margin: 13px 0 0;
+      color: #4f5665;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    .result-benefit {
+      margin-top: 18px;
+      padding: 15px 12px;
+      color: #1b385e;
+      border: 1px solid rgba(20,105,255,.16);
+      border-radius: 13px;
+      background: #f1f7ff;
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1.6;
+    }
+
+    .result-prize {
+      margin-top: 17px;
+      padding: 20px 14px;
+      color: #132744;
+      border: 1px solid rgba(20,105,255,.18);
+      border-radius: 16px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.92), rgba(237,246,255,.96)),
+        repeating-linear-gradient(135deg, transparent 0 12px, rgba(20,105,255,.025) 12px 13px);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.7);
+      font-size: 20px;
+      font-weight: 1000;
+      line-height: 1.45;
+      letter-spacing: -.035em;
+    }
+
+    .receive-panel {
+      margin-top: 18px;
+      padding: 17px 14px 15px;
+      border: 1px solid rgba(16,44,83,.13);
+      border-radius: 16px;
+      background: #fffdf7;
+    }
+
+    .receive-question {
+      margin: 0;
+      color: #28364d;
+      font-size: 16px;
+      font-weight: 950;
+      line-height: 1.45;
+    }
+
+    .receive-sub {
+      margin: 6px 0 13px;
+      color: #777d89;
+      font-size: 11.5px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .choice-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 9px;
+    }
+
+    .choice-btn {
+      min-height: 52px;
+      padding: 11px 9px;
+      border: 1px solid transparent;
+      border-radius: 13px;
+      font-size: 15px;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+    }
+
+    .choice-btn:hover:not(:disabled) { transform: translateY(-1px); }
+    .choice-btn:disabled { opacity: .58; cursor: wait; }
+
+    .choice-yes {
+      color: #fff;
+      background: linear-gradient(135deg, #16765e, #0c5142);
+      box-shadow: 0 9px 20px rgba(12,81,66,.18);
+    }
+
+    .choice-no {
+      color: #4d5564;
+      border-color: rgba(53,66,84,.16);
+      background: #eef1f5;
+    }
+
+    .choice-btn.selected {
+      outline: 3px solid rgba(241,198,109,.56);
+      outline-offset: 2px;
+      filter: saturate(1.14);
+    }
+
+    .choice-status {
+      min-height: 18px;
+      margin-top: 10px;
+      color: #526071;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .performance-card {
+      position: relative;
+      margin-top: 19px;
+      padding: 19px 15px 16px;
+      overflow: hidden;
+      color: #fff;
+      border-radius: 17px;
+      background:
+        radial-gradient(circle at 94% 7%, rgba(255,225,152,.23), transparent 9rem),
+        linear-gradient(145deg, #102f5d, #071a38 68%, #051126);
+      box-shadow: 0 14px 34px rgba(4,18,42,.22);
+      text-align: left;
+    }
+
+    .performance-card::after {
+      content: "";
+      position: absolute;
+      width: 94px;
+      height: 94px;
+      right: -41px;
+      bottom: -45px;
+      border: 1px solid rgba(255,231,171,.25);
+      border-radius: 50%;
+    }
+
+    .performance-kicker {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 6px;
+      color: #ffe4a0;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+
+    .performance-total {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: rgba(255,255,255,.88);
+      font-size: 15px;
+      font-weight: 850;
+      line-height: 1.45;
+    }
+
+    .performance-total strong {
+      display: inline-block;
+      margin: 0 3px;
+      color: #ffe59f;
+      font-size: 29px;
+      font-weight: 1000;
+      letter-spacing: -.05em;
+      text-shadow: 0 0 19px rgba(255,211,105,.22);
+    }
+
+    .performance-list {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 7px;
+      margin-top: 13px;
+    }
+
+    .performance-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 9px 10px;
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: 11px;
+      background: rgba(255,255,255,.075);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .performance-item strong {
+      color: #ffe59f;
+      font-size: 15px;
+      font-weight: 1000;
+    }
+
+    .performance-note {
+      position: relative;
+      z-index: 1;
+      margin: 11px 1px 0;
+      color: rgba(255,255,255,.58);
+      font-size: 9.5px;
+      line-height: 1.5;
+    }
+
+    .play-store-button {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      width: 100%;
+      margin-top: 18px;
+      padding: 13px 14px;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 15px;
+      background: linear-gradient(135deg, #20252e, #080a0e);
+      box-shadow: 0 12px 27px rgba(0,0,0,.20);
+      text-decoration: none;
+      text-align: left;
+      transition: transform .17s ease, box-shadow .17s ease;
+    }
+
+    .play-store-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 31px rgba(0,0,0,.26);
+    }
+
+    .play-icon {
+      display: grid;
+      flex: 0 0 auto;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border-radius: 11px;
+      background: rgba(255,255,255,.08);
+    }
+
+    .play-store-copy { min-width: 0; }
+    .play-store-copy small {
+      display: block;
+      margin-bottom: 2px;
+      color: rgba(255,255,255,.66);
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .play-store-copy strong {
+      display: block;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 950;
+    }
+
+    .play-arrow {
+      margin-left: auto;
+      color: rgba(255,255,255,.65);
+      font-size: 21px;
+      font-weight: 900;
+    }
+
+    .footer {
+      margin: 18px 6px 0;
+      color: rgba(255,255,255,.59);
+      text-align: center;
+      font-size: 10.5px;
+      font-weight: 600;
+      line-height: 1.65;
+    }
+
+    .honeypot {
+      position: absolute !important;
+      left: -9999px !important;
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+
+    .confetti {
+      position: fixed;
+      top: -20px;
+      z-index: 999;
+      width: 9px;
+      height: 14px;
+      border-radius: 2px;
+      pointer-events: none;
+      animation: fall 2.8s linear forwards;
+    }
+
+    @keyframes fall {
+      to { transform: translate3d(var(--drift), 110vh, 0) rotate(760deg); opacity: .15; }
+    }
+
+    @media (max-width: 430px) {
+      body { padding: 11px 9px 34px; }
+      .hero { min-height: 375px; padding: 21px 17px 107px; border-radius: 24px 24px 17px 17px; }
+      .hero::before { width: 94px; height: 94px; top: 25px; right: 18px; }
+      .brand { max-width: calc(100% - 105px); font-size: 10.5px; }
+      .hero-copy { margin-top: 33px; }
+      .hero h1 { max-width: 320px; }
+      .hanok { right: 9px; bottom: 21px; transform: scale(.92); transform-origin: bottom right; }
+      .status-card { margin-inline: 7px; }
+      .section-card, .form-card { padding-inline: 15px; }
+      .prize { grid-template-columns: 48px 1fr auto; padding-inline: 10px; }
+      .timeline { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 350px) {
+      .prize { grid-template-columns: 45px 1fr; }
+      .prize-count { grid-column: 2; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+
+    /* 휴대전화 인증 */
+    .phone-action-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 132px;
+      gap: 9px;
+      align-items: stretch;
+    }
+
+    .phone-action-row input { min-width: 0; }
+
+    .inline-action-btn,
+    .otp-verify-btn {
+      border: 0;
+      border-radius: 12px;
+      padding: 0 12px;
+      color: #fff;
+      background: linear-gradient(135deg, #1267ff, #0a49c7);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(18,103,255,.2);
+      transition: transform .18s ease, opacity .18s ease;
+    }
+
+    .inline-action-btn:hover:not(:disabled),
+    .otp-verify-btn:hover:not(:disabled) { transform: translateY(-1px); }
+    .inline-action-btn:disabled,
+    .otp-verify-btn:disabled { opacity: .55; cursor: not-allowed; transform: none; }
+
+    .otp-status {
+      min-height: 20px;
+      margin: 7px 2px 0;
+      color: #667085;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .otp-status.success { color: #08775d; }
+    .otp-status.error { color: #c43b46; }
+
+    .otp-panel {
+      margin: 12px 0 4px;
+      padding: 13px;
+      border: 1px solid rgba(18,103,255,.2);
+      border-radius: 14px;
+      background: linear-gradient(135deg, #f4f8ff, #fbfdff);
+    }
+
+    .otp-panel[hidden] { display: none; }
+
+    .otp-panel.is-waiting {
+      border-style: dashed;
+      background: #f8fafc;
+    }
+
+    .otp-panel.is-verified {
+      border-color: rgba(8,119,93,.25);
+      background: linear-gradient(135deg, #effcf7, #fbfffd);
+    }
+
+    .otp-row input:disabled {
+      color: #8b94a4;
+      background: #eef1f5;
+      cursor: not-allowed;
+    }
+
+    .otp-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 110px;
+      gap: 9px;
+      align-items: stretch;
+    }
+
+    .otp-row input {
+      text-align: center;
+      letter-spacing: .3em;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .otp-timer {
+      margin-top: 8px;
+      color: #526071;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .verified-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: #08775d;
+      background: #e9fbf5;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    /* O/X 저장 후 최종 완료 화면 */
+    .completion-card {
+      display: none;
+      margin-top: 18px;
+      padding: 28px 22px;
+      border: 1px solid rgba(255,255,255,.8);
+      border-radius: 24px;
+      background: linear-gradient(180deg, #ffffff, #f8fbff);
+      box-shadow: 0 24px 65px rgba(4,20,45,.22);
+    }
+
+    .completion-card.active { display: block; animation: rise .42s ease; }
+
+    .completion-icon {
+      display: grid;
+      width: 84px;
+      height: 84px;
+      place-items: center;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #e9fff7, #8ee3c8);
+      box-shadow: 0 14px 30px rgba(33,155,120,.2);
+      font-size: 40px;
+    }
+
+    .completion-title {
+      margin: 0;
+      color: #102b50;
+      font-size: 27px;
+      font-weight: 950;
+      letter-spacing: -.04em;
+    }
+
+    .completion-message {
+      margin: 10px 0 17px;
+      color: #536174;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.7;
+    }
+
+    .completion-summary {
+      margin: 0 0 18px;
+      padding: 15px;
+      border: 1px solid rgba(16,43,80,.1);
+      border-radius: 14px;
+      background: #f5f8fc;
+      text-align: left;
+      color: #253752;
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 430px) {
+      .phone-action-row { grid-template-columns: minmax(0, 1fr) 116px; }
+      .inline-action-btn { font-size: 12px; padding-inline: 8px; }
+      .otp-row { grid-template-columns: minmax(0, 1fr) 98px; }
+      .completion-card { padding-inline: 16px; }
+    }
+
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero" aria-label="2026 모아경제TV 10만 구독자 달성 기원 한가위 이벤트">
+      <div class="brand">
+        <span class="brand-mark">M</span>
+        <span>MOA ECONOMY TV</span>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">HAPPY CHUSEOK · 100K WISH</p>
+        <h1>2026 모아경제TV<br><strong>10만 구독자 달성 기원</strong><br>한가위 이벤트</h1>
+        <div class="hundred-k">
+          <span class="number">100K</span>
+          <span class="label">SUBSCRIBERS<br>TOGETHER</span>
+        </div>
+        <div class="hero-foot">
+          <span class="hero-chip">🌕 9월 24일 OPEN</span>
+          <span class="hero-chip">🎁 참여자 전원 혜택</span>
+        </div>
+      </div>
+
+      <div class="hanok" aria-hidden="true">
+        <div class="roof"></div>
+        <div class="house"></div>
+      </div>
+    </section>
+
+    <section id="statusCard" class="status-card before" aria-live="polite">
+      <div id="statusLabel" class="status-label">이벤트 오픈까지</div>
+      <div id="statusTime" class="status-time">--:--:--</div>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">풍성한 한가위 선물</h2>
+      <p class="section-desc">모아경제TV 10만 구독자 달성을 함께 기원하며 준비했습니다.</p>
+
+      <div class="prize-grid">
+        <div class="prize">
+          <div class="prize-icon">🥩</div>
+          <div>
+            <div class="prize-rank">1등</div>
+            <div class="prize-name">프리미엄 한우 선물 세트</div>
+          </div>
+          <div class="prize-count">1명</div>
+        </div>
+
+        <div class="prize">
+          <div class="prize-icon">🍎</div>
+          <div>
+            <div class="prize-rank">2등</div>
+            <div class="prize-name">프리미엄 과일 선물 세트</div>
+          </div>
+          <div class="prize-count">2명</div>
+        </div>
+
+        <div class="prize">
+          <div class="prize-icon">🍗</div>
+          <div>
+            <div class="prize-rank">3등</div>
+            <div class="prize-name">치킨 기프티콘</div>
+          </div>
+          <div class="prize-count">5명</div>
+        </div>
+
+        <div class="prize rank-all">
+          <div class="prize-icon">📈</div>
+          <div>
+            <div class="prize-rank">참여자 전원</div>
+            <div class="prize-name">김민성 전문가의 9월 스윙주</div>
+          </div>
+          <div class="prize-count">전원</div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>🗓 응모 기간</strong>
+          <span>9월 24일(목) 00:00<br>~ 9월 27일(일) 23:59</span>
+        </div>
+        <div class="timeline-item">
+          <strong>📲 순차 전달</strong>
+          <span>9월 28일(월)부터<br>당첨 상품·스윙주 개별 안내</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="formCard" class="form-card">
+      <div class="form-head-icon" aria-hidden="true">🌕</div>
+      <h2 class="section-title">한가위 이벤트 응모</h2>
+      <p class="section-desc">이름과 휴대전화 번호만 입력하면 누구나 참여할 수 있습니다.<br>휴대전화 번호 기준 1인 1회 응모됩니다.</p>
+
+      <form id="entryForm" method="post" target="submitFrame" novalidate>
+        <div class="field">
+          <label for="userName">이름</label>
+          <input type="text" id="userName" name="name" placeholder="이름을 입력해 주세요" autocomplete="name" maxlength="30" required>
+        </div>
+
+        <div class="field">
+          <label for="userPhone">휴대전화 번호 인증</label>
+          <div class="phone-action-row">
+            <input type="tel" id="userPhone" name="phone" placeholder="01012345678" autocomplete="tel" inputmode="numeric" maxlength="13" required>
+            <button type="button" id="sendOtpBtn" class="inline-action-btn">인증번호 받기</button>
+          </div>
+          <div id="otpStatus" class="otp-status">실제 사용 중인 휴대전화 번호로 인증해 주세요.</div>
+        </div>
+
+        <div id="otpPanel" class="otp-panel is-waiting">
+          <div class="otp-row">
+            <input type="text" id="otpNumber" placeholder="인증번호 6자리" inputmode="numeric" maxlength="6" autocomplete="one-time-code" disabled>
+            <button type="button" id="verifyOtpBtn" class="otp-verify-btn" disabled>인증 확인</button>
+          </div>
+          <div id="otpTimer" class="otp-timer">인증번호를 발송하면 입력칸이 활성화됩니다.</div>
+        </div>
+
+        <div class="consent-box">
+          <label class="consent-row consent-all-row">
+            <input type="checkbox" id="allAgree">
+            <span>모두 동의합니다<small>필수 및 선택 동의 항목을 한 번에 선택합니다.</small></span>
+          </label>
+
+          <label class="consent-row">
+            <input type="checkbox" id="privacyAgree">
+            <span><span class="required">[필수]</span> 이벤트 운영을 위한 개인정보 수집·이용에 동의합니다.</span>
+          </label>
+
+          <label class="consent-row">
+            <input type="checkbox" id="marketingAgree">
+            <span><span class="optional">[선택]</span> 모아경제TV의 투자 콘텐츠·서비스 관련 광고성 정보 수신에 동의합니다.</span>
+          </label>
+          <p class="consent-help">마케팅 수신 동의는 선택이며, 동의하지 않아도 이벤트 참여와 경품 추첨에 불이익이 없습니다.</p>
+        </div>
+
+        <details class="policy">
+          <summary>개인정보 및 마케팅 동의 내용 보기</summary>
+          <div class="policy-content">
+            <strong>개인정보 수집·이용(필수)</strong><br>
+            · 항목: 이름, 휴대전화 번호, 휴대전화 인증 성공 여부<br>
+            · 목적: 이벤트 응모, 중복 참여 방지, 당첨 상품 및 9월 스윙주 전달<br>
+            · 보유기간: 이벤트 관련 안내 및 전달 완료 후 3개월까지<br>
+            · 동의를 거부할 수 있으나, 거부 시 이벤트 참여가 제한됩니다.<br><br>
+            <strong>광고성 정보 수신(선택)</strong><br>
+            · 방법: 문자·전화<br>
+            · 내용: 모아경제TV 투자 콘텐츠, 서비스 및 이벤트 안내<br>
+            · 보유기간: 동의 철회 시까지<br>
+            · 수신동의 철회: 모아경제TV 1551-3411
+          </div>
+        </details>
+
+        <input type="hidden" id="entryAction" name="action" value="submitEntry">
+        <input type="hidden" id="privacyConsent" name="privacyConsent" value="N">
+        <input type="hidden" id="marketingConsent" name="marketingConsent" value="N">
+        <input type="hidden" id="nonce" name="nonce" value="">
+        <input type="hidden" id="verificationToken" name="verificationToken" value="">
+        <div class="honeypot" aria-hidden="true">
+          <label for="website">웹사이트</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit" id="submitBtn" class="submit-btn" disabled>휴대전화 인증 후 응모하기</button>
+      </form>
+
+      <form id="otpRequestForm" method="post" target="submitFrame" hidden>
+        <input type="hidden" name="action" value="requestOtp">
+        <input type="hidden" id="otpRequestName" name="name" value="">
+        <input type="hidden" id="otpRequestPhone" name="phone" value="">
+        <input type="hidden" id="otpRequestPrivacy" name="privacyConsent" value="Y">
+        <input type="hidden" id="otpRequestNonce" name="nonce" value="">
+      </form>
+
+      <form id="otpVerifyForm" method="post" target="submitFrame" hidden>
+        <input type="hidden" name="action" value="verifyOtp">
+        <input type="hidden" id="otpVerifyPhone" name="phone" value="">
+        <input type="hidden" id="otpVerifyNumber" name="authNumber" value="">
+        <input type="hidden" id="otpVerifySession" name="verificationSession" value="">
+        <input type="hidden" id="otpVerifyNonce" name="nonce" value="">
+      </form>
+
+      <form id="preferenceForm" method="post" target="submitFrame" hidden>
+        <input type="hidden" name="action" value="savePreference">
+        <input type="hidden" id="preferenceEntryId" name="entryId" value="">
+        <input type="hidden" id="preferencePhone" name="phone" value="">
+        <input type="hidden" id="preferenceChoice" name="receiveChoice" value="">
+        <input type="hidden" id="preferenceNonce" name="nonce" value="">
+      </form>
+
+      <div class="delivery-note">🎁 당첨 상품과 참여자 전원 혜택인 9월 스윙주는 <strong>9월 28일부터</strong> 입력하신 번호로 순차 전달됩니다.</div>
+
+      <iframe id="submitFrame" name="submitFrame" title="응모 전송" hidden></iframe>
+    </section>
+
+    <section id="resultCard" class="result-card" aria-live="polite">
+      <div id="resultIcon" class="result-icon" aria-hidden="true">🎉</div>
+      <h2 id="resultTitle" class="result-title">실시간 추첨 결과</h2>
+      <p id="resultMessage" class="result-message">결과를 확인했습니다.</p>
+      <div id="resultPrize" class="result-prize">김민성 전문가의 9월 스윙주</div>
+      <div class="result-benefit">📲 상품 또는 스윙주 자료는 <strong>9월 28일부터</strong> 입력하신 휴대전화 번호로 순차 전달됩니다.</div>
+
+      <div class="receive-panel">
+        <p class="receive-question">상품 또는 스윙주 자료를 받습니다.</p>
+        <p class="receive-sub">아래 O 또는 X를 눌러 수령 의사를 남겨 주세요.</p>
+        <div class="choice-buttons">
+          <button type="button" id="receiveYes" class="choice-btn choice-yes" onclick="submitReceiptChoice('O')">O · 받겠습니다</button>
+          <button type="button" id="receiveNo" class="choice-btn choice-no" onclick="submitReceiptChoice('X')">X · 받지 않겠습니다</button>
+        </div>
+        <div id="choiceStatus" class="choice-status">아직 수령 의사를 선택하지 않았습니다.</div>
+      </div>
+
+
+    </section>
+
+    <section id="completionCard" class="completion-card" aria-live="polite">
+      <div class="completion-icon" aria-hidden="true">✅</div>
+      <h2 id="completionTitle" class="completion-title">최종 제출이 완료되었습니다</h2>
+      <p id="completionMessage" class="completion-message">응답이 정상적으로 저장되었습니다.</p>
+      <div class="completion-summary">
+        <div><strong>추첨 결과</strong><br><span id="completionResult">김민성 전문가의 9월 스윙주</span></div>
+        <div style="margin-top:9px;"><strong>수령 의사</strong><br><span id="completionChoice">O · 받겠습니다</span></div>
+      </div>
+      <div class="performance-card">
+        <p class="performance-kicker">SEPTEMBER · GOLD CLASS PERFORMANCE</p>
+        <p class="performance-total">9월 모아경제TV 골드클래스<br>누적수익률 <strong>+148%</strong> 진행중</p>
+        <div class="performance-list">
+          <div class="performance-item"><span>가온전선</span><strong>+35% 🔥</strong></div>
+          <div class="performance-item"><span>대한광통신</span><strong>+26% 🔥</strong></div>
+          <div class="performance-item"><span>코리아써키트</span><strong>+18% 🔥</strong></div>
+        </div>
+        <p class="performance-note">※ 사용자 제공 집계 기준의 과거 성과이며, 미래 수익을 보장하지 않습니다.</p>
+      </div>
+
+      <a class="play-store-button" href="https://play.google.com/store/apps/details?hl=ko&id=com.aveapp.moalabtv" target="_blank" rel="noopener noreferrer" aria-label="Google Play에서 모아경제TV 앱 설치">
+        <span class="play-icon" aria-hidden="true">
+          <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.6 1.6L14.6 13.5L1.7 25.4C1.25 24.9 1 24.2 1 23.4V3.6C1 2.8 1.2 2.1 1.6 1.6Z" fill="#33D375"/>
+            <path d="M17.1 11.2L5.1 4.2L14.6 13.5L17.1 11.2Z" fill="#19B5FE"/>
+            <path d="M17.1 15.8L14.6 13.5L5 22.9L17.1 15.8Z" fill="#FFCB3D"/>
+            <path d="M17.1 11.2L22.2 14.1C23 14.55 23 15.45 22.2 15.9L17.1 18.8L14.6 13.5L17.1 11.2Z" fill="#FF5A5F"/>
+          </svg>
+        </span>
+        <span class="play-store-copy"><small>Google Play에서</small><strong>모아경제TV 앱 설치</strong></span>
+        <span class="play-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <p class="footer">
+      본 이벤트는 모아경제TV가 진행합니다. 제공되는 종목 자료는 투자 참고용이며 수익을 보장하지 않습니다.<br>
+      투자 판단과 책임은 투자자 본인에게 있으며, 원격·대리·일임매매를 제공하지 않습니다.
+    </p>
+  </main>
+
+  <script>
+    // 1) Apps Script 웹 앱을 배포한 뒤 아래 값을 /exec 주소로 교체하세요.
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzEPtwNbW9pp9nErEMRm4OA5dkArFzUkWufQILxxfA_G5mZTnenW9ifZ6q1loiQlG_qlw/exec";
+
+    const EVENT_START = new Date("2026-09-24T00:00:00+09:00").getTime();
+    const EVENT_END = new Date("2026-09-27T23:59:59+09:00").getTime();
+    const BRIDGE_SOURCE = "moa100k-event";
+
+    const form = document.getElementById("entryForm");
+    const otpRequestForm = document.getElementById("otpRequestForm");
+    const otpVerifyForm = document.getElementById("otpVerifyForm");
+    const preferenceForm = document.getElementById("preferenceForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const phoneInput = document.getElementById("userPhone");
+    const sendOtpBtn = document.getElementById("sendOtpBtn");
+    const verifyOtpBtn = document.getElementById("verifyOtpBtn");
+    const otpNumberInput = document.getElementById("otpNumber");
+    const otpPanel = document.getElementById("otpPanel");
+    const allAgree = document.getElementById("allAgree");
+    const privacyAgree = document.getElementById("privacyAgree");
+    const marketingAgree = document.getElementById("marketingAgree");
+    const receiveYes = document.getElementById("receiveYes");
+    const receiveNo = document.getElementById("receiveNo");
+
+    let pendingNonce = "";
+    let pendingRequestType = "";
+    let submitTimer = null;
+    let activeEntryId = "";
+    let activePhone = "";
+    let activeChoice = "";
+    let activeDrawResult = "";
+    let otpSession = "";
+    let phoneVerifiedToken = "";
+    let otpExpiryAt = 0;
+    let otpTimerInterval = null;
+    let resendAvailableAt = 0;
+
+    setInterval(updateStatus, 1000);
+    updateStatus();
+    updateSubmitAvailability();
+
+    phoneInput.addEventListener("input", function () {
+      const digits = this.value.replace(/[^0-9]/g, "").slice(0, 11);
+      if (digits.length <= 3) this.value = digits;
+      else if (digits.length <= 7) this.value = digits.slice(0, 3) + "-" + digits.slice(3);
+      else this.value = digits.slice(0, 3) + "-" + digits.slice(3, 7) + "-" + digits.slice(7);
+      resetPhoneVerification();
+    });
+
+    otpNumberInput.addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, "").slice(0, 6);
+    });
+
+    sendOtpBtn.addEventListener("click", requestOtp);
+    verifyOtpBtn.addEventListener("click", verifyOtp);
+
+    allAgree.addEventListener("change", function () {
+      privacyAgree.checked = this.checked;
+      marketingAgree.checked = this.checked;
+      syncAllAgreeState();
+    });
+
+    privacyAgree.addEventListener("change", syncAllAgreeState);
+    marketingAgree.addEventListener("change", syncAllAgreeState);
+    syncAllAgreeState();
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!isEventOpen()) {
+        showInlineError(Date.now() < EVENT_START
+          ? "이벤트는 9월 24일 00시에 시작됩니다."
+          : "이벤트 응모가 마감되었습니다.");
+        return;
+      }
+
+      const name = document.getElementById("userName").value.trim();
+      const phone = phoneInput.value.replace(/[^0-9]/g, "");
+      const privacy = document.getElementById("privacyAgree").checked;
+      const marketing = document.getElementById("marketingAgree").checked;
+
+      if (name.length < 2) {
+        showInlineError("이름을 정확히 입력해 주세요.");
+        document.getElementById("userName").focus();
+        return;
+      }
+
+      if (!/^010\d{8}$/.test(phone)) {
+        showInlineError("휴대전화 번호는 010으로 시작하는 11자리 숫자로 입력해 주세요.");
+        phoneInput.focus();
+        return;
+      }
+
+      if (!privacy) {
+        showInlineError("개인정보 수집·이용 필수 동의에 체크해 주세요.");
+        document.getElementById("privacyAgree").focus();
+        return;
+      }
+
+      if (!phoneVerifiedToken) {
+        showInlineError("휴대전화 인증을 먼저 완료해 주세요.");
+        phoneInput.focus();
+        return;
+      }
+
+      if (!isConfigured()) {
+        showInlineError("관리자 설정이 완료되지 않았습니다. Apps Script 웹 앱 주소를 확인해 주세요.");
+        return;
+      }
+
+      document.getElementById("entryAction").value = "submitEntry";
+      document.getElementById("privacyConsent").value = "Y";
+      document.getElementById("marketingConsent").value = marketing ? "Y" : "N";
+      pendingNonce = createNonce();
+      pendingRequestType = "entry";
+      document.getElementById("nonce").value = pendingNonce;
+      document.getElementById("verificationToken").value = phoneVerifiedToken;
+
+      form.action = APPS_SCRIPT_URL;
+      submitBtn.disabled = true;
+      submitBtn.textContent = "실시간 행운을 확인하는 중…";
+      form.submit();
+
+      startResponseTimeout("entry");
+    });
+
+    window.addEventListener("message", function (event) {
+      const data = event.data;
+      if (!data || data.source !== BRIDGE_SOURCE) return;
+      if (!pendingNonce || data.nonce !== pendingNonce) return;
+
+      clearTimeout(submitTimer);
+      const requestType = data.responseType || pendingRequestType;
+      pendingNonce = "";
+      pendingRequestType = "";
+
+      if (requestType === "otp_request") {
+        handleOtpRequestResponse(data);
+        return;
+      }
+
+      if (requestType === "otp_verify") {
+        handleOtpVerifyResponse(data);
+        return;
+      }
+
+      if (requestType === "preference") {
+        setChoiceButtonsDisabled(false);
+        if (data.status === "success") {
+          activeChoice = data.receiveChoice || "";
+          showCompletionScreen(activeChoice, data.message || "수령 의사가 저장되었습니다.");
+        } else {
+          renderChoiceState(activeChoice, data.message || "수령 의사를 저장하지 못했습니다.", true);
+        }
+        return;
+      }
+
+      if (data.status === "success" || data.status === "already") {
+        activePhone = phoneInput.value.replace(/[^0-9]/g, "");
+        activeEntryId = data.entryId || "";
+        activeChoice = data.receiveChoice || "";
+        showResult(data);
+        if (data.status === "success") launchConfetti(data.isPrize === true ? 64 : 34);
+        return;
+      }
+
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '무료로 응모하기 <span aria-hidden="true">→</span>';
+      showInlineError(data.message || "응모를 처리하지 못했습니다. 잠시 후 다시 시도해 주세요.");
+    });
+
+    function syncAllAgreeState() {
+      const privacyChecked = privacyAgree.checked;
+      const marketingChecked = marketingAgree.checked;
+      allAgree.checked = privacyChecked && marketingChecked;
+      allAgree.indeterminate = privacyChecked !== marketingChecked;
+      allAgree.setAttribute("aria-checked", allAgree.indeterminate ? "mixed" : String(allAgree.checked));
+    }
+
+    function requestOtp() {
+      const name = document.getElementById("userName").value.trim();
+      const phone = phoneInput.value.replace(/[^0-9]/g, "");
+      const privacy = document.getElementById("privacyAgree").checked;
+
+      if (!isEventOpen()) {
+        showInlineError(Date.now() < EVENT_START ? "이벤트는 9월 24일 00시에 시작됩니다." : "이벤트 응모가 마감되었습니다.");
+        return;
+      }
+      if (name.length < 2) {
+        showInlineError("이름을 먼저 정확히 입력해 주세요.");
+        document.getElementById("userName").focus();
+        return;
+      }
+      if (!/^010\d{8}$/.test(phone)) {
+        showInlineError("휴대전화 번호는 010으로 시작하는 11자리 숫자로 입력해 주세요.");
+        phoneInput.focus();
+        return;
+      }
+      if (!privacy) {
+        showInlineError("인증번호 발송 전에 개인정보 수집·이용 필수 동의에 체크해 주세요.");
+        document.getElementById("privacyAgree").focus();
+        return;
+      }
+      if (!isConfigured()) {
+        showInlineError("관리자 설정이 완료되지 않았습니다. Apps Script 웹 앱 주소를 확인해 주세요.");
+        return;
+      }
+      if (Date.now() < resendAvailableAt) return;
+
+      pendingNonce = createNonce();
+      pendingRequestType = "otp_request";
+      document.getElementById("otpRequestName").value = name;
+      document.getElementById("otpRequestPhone").value = phone;
+      document.getElementById("otpRequestPrivacy").value = "Y";
+      document.getElementById("otpRequestNonce").value = pendingNonce;
+      otpRequestForm.action = APPS_SCRIPT_URL;
+
+      sendOtpBtn.disabled = true;
+      sendOtpBtn.textContent = "발송 중…";
+      setOtpStatus("인증번호를 발송하고 있습니다…");
+      otpRequestForm.submit();
+      startResponseTimeout("otp_request");
+    }
+
+    function verifyOtp() {
+      const phone = phoneInput.value.replace(/[^0-9]/g, "");
+      const authNumber = otpNumberInput.value.replace(/[^0-9]/g, "");
+
+      if (!otpSession) {
+        setOtpStatus("인증번호를 다시 받아 주세요.", true);
+        return;
+      }
+      if (!/^\d{6}$/.test(authNumber)) {
+        setOtpStatus("문자로 받은 6자리 인증번호를 입력해 주세요.", true);
+        otpNumberInput.focus();
+        return;
+      }
+
+      pendingNonce = createNonce();
+      pendingRequestType = "otp_verify";
+      document.getElementById("otpVerifyPhone").value = phone;
+      document.getElementById("otpVerifyNumber").value = authNumber;
+      document.getElementById("otpVerifySession").value = otpSession;
+      document.getElementById("otpVerifyNonce").value = pendingNonce;
+      otpVerifyForm.action = APPS_SCRIPT_URL;
+
+      verifyOtpBtn.disabled = true;
+      verifyOtpBtn.textContent = "확인 중…";
+      setOtpStatus("인증번호를 확인하고 있습니다…");
+      otpVerifyForm.submit();
+      startResponseTimeout("otp_verify");
+    }
+
+    function handleOtpRequestResponse(data) {
+      if (data.status !== "success") {
+        sendOtpBtn.disabled = false;
+        sendOtpBtn.textContent = "인증번호 받기";
+        setOtpStatus(data.message || "인증번호 발송에 실패했습니다.", true);
+        return;
+      }
+
+      otpSession = data.verificationSession || "";
+      phoneVerifiedToken = "";
+      otpPanel.hidden = false;
+      otpPanel.classList.remove("is-waiting", "is-verified");
+      otpNumberInput.disabled = false;
+      verifyOtpBtn.disabled = false;
+      otpNumberInput.value = "";
+      otpNumberInput.focus();
+      otpExpiryAt = Date.now() + (Number(data.expiresIn) || 180) * 1000;
+      resendAvailableAt = Date.now() + (Number(data.resendAfter) || 60) * 1000;
+      setOtpStatus(data.message || "인증번호를 발송했습니다.");
+      startOtpCountdown();
+      updateResendButton();
+    }
+
+    function handleOtpVerifyResponse(data) {
+      verifyOtpBtn.disabled = false;
+      verifyOtpBtn.textContent = "인증 확인";
+
+      if (data.status !== "success") {
+        setOtpStatus(data.message || "인증번호가 일치하지 않습니다.", true);
+        otpNumberInput.focus();
+        return;
+      }
+
+      phoneVerifiedToken = data.verificationToken || "";
+      document.getElementById("verificationToken").value = phoneVerifiedToken;
+      clearInterval(otpTimerInterval);
+      otpPanel.hidden = false;
+      otpPanel.classList.remove("is-waiting");
+      otpPanel.classList.add("is-verified");
+      otpNumberInput.value = "";
+      otpNumberInput.disabled = true;
+      verifyOtpBtn.disabled = true;
+      verifyOtpBtn.textContent = "인증 완료";
+      document.getElementById("otpTimer").textContent = "휴대전화 인증이 완료되었습니다.";
+      phoneInput.readOnly = true;
+      sendOtpBtn.disabled = true;
+      sendOtpBtn.textContent = "인증 완료";
+      setOtpStatus("✓ 휴대전화 인증이 완료되었습니다.", false, true);
+      updateSubmitAvailability();
+    }
+
+    function resetPhoneVerification() {
+      if (phoneInput.readOnly) return;
+      phoneVerifiedToken = "";
+      otpSession = "";
+      document.getElementById("verificationToken").value = "";
+      otpPanel.hidden = false;
+      otpPanel.classList.add("is-waiting");
+      otpPanel.classList.remove("is-verified");
+      otpNumberInput.value = "";
+      otpNumberInput.disabled = true;
+      verifyOtpBtn.disabled = true;
+      verifyOtpBtn.textContent = "인증 확인";
+      document.getElementById("otpTimer").textContent = "인증번호를 발송하면 입력칸이 활성화됩니다.";
+      clearInterval(otpTimerInterval);
+      setOtpStatus("실제 사용 중인 휴대전화 번호로 인증해 주세요.");
+      updateSubmitAvailability();
+    }
+
+    function setOtpStatus(message, isError, isSuccess) {
+      const status = document.getElementById("otpStatus");
+      status.textContent = message || "";
+      status.classList.toggle("error", !!isError);
+      status.classList.toggle("success", !!isSuccess);
+    }
+
+    function startOtpCountdown() {
+      clearInterval(otpTimerInterval);
+      updateOtpCountdown();
+      otpTimerInterval = setInterval(updateOtpCountdown, 1000);
+    }
+
+    function updateOtpCountdown() {
+      const remaining = Math.max(0, Math.ceil((otpExpiryAt - Date.now()) / 1000));
+      const mm = String(Math.floor(remaining / 60)).padStart(2, "0");
+      const ss = String(remaining % 60).padStart(2, "0");
+      document.getElementById("otpTimer").textContent = "인증번호 유효시간 " + mm + ":" + ss;
+      updateResendButton();
+      if (remaining <= 0) {
+        clearInterval(otpTimerInterval);
+        otpSession = "";
+        otpNumberInput.disabled = true;
+        verifyOtpBtn.disabled = true;
+        setOtpStatus("인증번호가 만료되었습니다. 다시 받아 주세요.", true);
+      }
+    }
+
+    function updateResendButton() {
+      if (phoneVerifiedToken) return;
+      const remaining = Math.max(0, Math.ceil((resendAvailableAt - Date.now()) / 1000));
+      if (remaining > 0) {
+        sendOtpBtn.disabled = true;
+        sendOtpBtn.textContent = "재전송 " + remaining + "초";
+      } else {
+        sendOtpBtn.disabled = false;
+        sendOtpBtn.textContent = otpSession ? "인증번호 재전송" : "인증번호 받기";
+      }
+    }
+
+    function updateSubmitAvailability() {
+      if (!isEventOpen() || pendingNonce || document.getElementById("resultCard").classList.contains("active") || document.getElementById("completionCard").classList.contains("active")) return;
+      submitBtn.disabled = !phoneVerifiedToken;
+      submitBtn.innerHTML = phoneVerifiedToken
+        ? '무료로 응모하기 <span aria-hidden="true">→</span>'
+        : '휴대전화 인증 후 응모하기';
+    }
+
+    function submitReceiptChoice(choice) {
+      if (!activeEntryId || !activePhone) {
+        renderChoiceState(activeChoice, "응모 정보를 확인할 수 없습니다. 페이지를 새로고침해 다시 확인해 주세요.", true);
+        return;
+      }
+
+      if (!isConfigured()) {
+        renderChoiceState(activeChoice, "관리자 설정이 완료되지 않았습니다.", true);
+        return;
+      }
+
+      const normalizedChoice = String(choice || "").toUpperCase();
+      if (normalizedChoice !== "O" && normalizedChoice !== "X") return;
+
+      pendingNonce = createNonce();
+      pendingRequestType = "preference";
+      document.getElementById("preferenceEntryId").value = activeEntryId;
+      document.getElementById("preferencePhone").value = activePhone;
+      document.getElementById("preferenceChoice").value = normalizedChoice;
+      document.getElementById("preferenceNonce").value = pendingNonce;
+      preferenceForm.action = APPS_SCRIPT_URL;
+
+      setChoiceButtonsDisabled(true);
+      document.getElementById("choiceStatus").textContent = "수령 의사를 저장하는 중입니다…";
+      preferenceForm.submit();
+      startResponseTimeout("preference");
+    }
+
+    function startResponseTimeout(type) {
+      clearTimeout(submitTimer);
+      submitTimer = setTimeout(function () {
+        pendingNonce = "";
+        pendingRequestType = "";
+
+        if (type === "otp_request") {
+          sendOtpBtn.disabled = false;
+          sendOtpBtn.textContent = "인증번호 받기";
+          setOtpStatus("인증번호 요청 시간이 초과되었습니다. 다시 시도해 주세요.", true);
+          return;
+        }
+
+        if (type === "otp_verify") {
+          verifyOtpBtn.disabled = false;
+          verifyOtpBtn.textContent = "인증 확인";
+          setOtpStatus("인증 확인 시간이 초과되었습니다. 다시 시도해 주세요.", true);
+          return;
+        }
+
+        if (type === "preference") {
+          setChoiceButtonsDisabled(false);
+          renderChoiceState(activeChoice, "응답 시간이 초과되었습니다. 네트워크를 확인한 뒤 다시 선택해 주세요.", true);
+          return;
+        }
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '무료로 응모하기 <span aria-hidden="true">→</span>';
+        showInlineError("응답 시간이 초과되었습니다. 네트워크를 확인한 뒤 다시 시도해 주세요.");
+      }, 20000);
+    }
+
+    function updateStatus() {
+      const now = Date.now();
+      const card = document.getElementById("statusCard");
+      const label = document.getElementById("statusLabel");
+      const time = document.getElementById("statusTime");
+
+      if (now < EVENT_START) {
+        card.className = "status-card before";
+        label.textContent = "🌕 이벤트 오픈까지";
+        time.textContent = formatTime(EVENT_START - now);
+        setFormAvailability(false, "9월 24일 00시 오픈");
+      } else if (now <= EVENT_END) {
+        card.className = "status-card live";
+        label.textContent = "🎁 한가위 이벤트 응모 마감까지";
+        time.textContent = formatTime(EVENT_END - now);
+        setFormAvailability(true, "무료로 응모하기 →");
+      } else {
+        card.className = "status-card closed";
+        label.textContent = "참여해 주셔서 감사합니다";
+        time.textContent = "이벤트 응모 마감";
+        setFormAvailability(false, "응모가 마감되었습니다");
+      }
+    }
+
+    function setFormAvailability(enabled, label) {
+      if (pendingNonce || document.getElementById("resultCard").classList.contains("active") || document.getElementById("completionCard").classList.contains("active")) return;
+      sendOtpBtn.disabled = !enabled || !!phoneVerifiedToken || Date.now() < resendAvailableAt;
+      if (!enabled) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = label;
+        return;
+      }
+      updateSubmitAvailability();
+    }
+
+    function isEventOpen() {
+      const now = Date.now();
+      return now >= EVENT_START && now <= EVENT_END;
+    }
+
+    function isConfigured() {
+      return /^https:\/\/script\.google\.com\/macros\/s\/.+\/exec$/.test(APPS_SCRIPT_URL);
+    }
+
+    function formatTime(diff) {
+      const safe = Math.max(0, diff);
+      const days = Math.floor(safe / 86400000);
+      const hours = Math.floor((safe % 86400000) / 3600000);
+      const minutes = Math.floor((safe % 3600000) / 60000);
+      const seconds = Math.floor((safe % 60000) / 1000);
+      const hh = String(hours).padStart(2, "0");
+      const mm = String(minutes).padStart(2, "0");
+      const ss = String(seconds).padStart(2, "0");
+      return days > 0 ? days + "일 " + hh + ":" + mm + ":" + ss : hh + ":" + mm + ":" + ss;
+    }
+
+    function createNonce() {
+      if (window.crypto && crypto.getRandomValues) {
+        const bytes = new Uint32Array(4);
+        crypto.getRandomValues(bytes);
+        return Array.from(bytes).map(function (v) { return v.toString(16); }).join("");
+      }
+      return Date.now().toString(36) + Math.random().toString(36).slice(2);
+    }
+
+    function showInlineError(message) {
+      alert(message);
+    }
+
+    function showResult(data) {
+      const result = data.drawResult || "참여자 전원 · 김민성 전문가의 9월 스윙주";
+      const physicalPrize = data.isPrize === true || /^(1등|2등|3등)/.test(result);
+
+      document.getElementById("formCard").style.display = "none";
+      document.getElementById("resultIcon").textContent = physicalPrize ? "🎊" : "🎁";
+      document.getElementById("resultTitle").textContent = physicalPrize ? "경품 당첨을 축하합니다!" : "참여 완료!";
+      activeDrawResult = result;
+      document.getElementById("resultMessage").textContent = data.message || "실시간 추첨 결과를 확인했습니다.";
+      document.getElementById("resultPrize").textContent = result;
+
+      if (activeChoice) {
+        showCompletionScreen(activeChoice, "기존에 저장된 수령 의사를 확인했습니다.");
+        return;
+      }
+
+      document.getElementById("resultCard").classList.add("active");
+      renderChoiceState("", "아직 수령 의사를 선택하지 않았습니다.");
+      document.getElementById("resultCard").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function showCompletionScreen(choice, message) {
+      document.getElementById("resultCard").classList.remove("active");
+      document.getElementById("completionTitle").textContent = choice === "O"
+        ? "수령 신청이 완료되었습니다"
+        : "최종 응답이 완료되었습니다";
+      document.getElementById("completionMessage").textContent = choice === "O"
+        ? "상품 또는 스윙주 자료는 9월 28일부터 입력하신 휴대전화 번호로 순차 전달됩니다."
+        : "수령하지 않음(X)으로 정상 저장되었습니다. 이벤트에 참여해 주셔서 감사합니다.";
+      document.getElementById("completionResult").textContent = activeDrawResult || "참여자 전원 · 김민성 전문가의 9월 스윙주";
+      document.getElementById("completionChoice").textContent = choice === "O" ? "O · 받겠습니다" : "X · 받지 않겠습니다";
+      document.getElementById("completionCard").classList.add("active");
+      document.getElementById("completionCard").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function renderChoiceState(choice, message, isError) {
+      receiveYes.classList.toggle("selected", choice === "O");
+      receiveNo.classList.toggle("selected", choice === "X");
+      const status = document.getElementById("choiceStatus");
+      status.textContent = message || "";
+      status.style.color = isError ? "#c43b46" : (choice ? "#176d5a" : "#526071");
+    }
+
+    function setChoiceButtonsDisabled(disabled) {
+      receiveYes.disabled = disabled;
+      receiveNo.disabled = disabled;
+    }
+
+    function launchConfetti(count) {
+      const colors = ["#f1c66d", "#1469ff", "#31d7ff", "#d74350", "#ffffff"];
+      for (let i = 0; i < count; i++) {
+        const piece = document.createElement("span");
+        piece.className = "confetti";
+        piece.style.left = Math.random() * 100 + "vw";
+        piece.style.background = colors[i % colors.length];
+        piece.style.animationDelay = Math.random() * .7 + "s";
+        piece.style.animationDuration = (2.1 + Math.random() * 1.5) + "s";
+        piece.style.setProperty("--drift", (Math.random() * 160 - 80) + "px");
+        document.body.appendChild(piece);
+        setTimeout(function () { piece.remove(); }, 4400);
+      }
+    }
+  </script>
+</body>
+</html>
