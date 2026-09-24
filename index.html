@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#06162f">
   <meta name="description" content="2026 모아경제TV 10만 구독자 달성 기원 한가위 이벤트">
   <title>2026 모아경제TV 10만 구독자 달성 기원 한가위 이벤트</title>
+  <!-- transport-fix-v2: iOS iframe + JSONP polling -->
   <style>
     :root {
       --navy-950: #041126;
@@ -1160,6 +1161,20 @@
       .completion-card { padding-inline: 16px; }
     }
 
+  
+    /* iOS/Safari 인앱 브라우저는 hidden(display:none) iframe의 응답 스크립트를
+       실행하지 않는 경우가 있어, 화면 밖의 1px 활성 iframe으로 유지합니다. */
+    #submitFrame {
+      position: fixed;
+      left: -10000px;
+      top: 0;
+      width: 1px;
+      height: 1px;
+      border: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+
   </style>
 </head>
 <body>
@@ -1349,7 +1364,7 @@
 
       <div class="delivery-note">🎁 당첨 상품과 참여자 전원 혜택인 9월 스윙주는 <strong>9월 28일부터</strong> 입력하신 번호로 순차 전달됩니다.</div>
 
-      <iframe id="submitFrame" name="submitFrame" title="응모 전송" hidden></iframe>
+      <iframe id="submitFrame" name="submitFrame" title="응모 전송" aria-hidden="true" tabindex="-1"></iframe>
     </section>
 
     <section id="resultCard" class="result-card" aria-live="polite">
@@ -1447,6 +1462,7 @@
     let otpExpiryAt = 0;
     let otpTimerInterval = null;
     let resendAvailableAt = 0;
+    let bridgePollTimer = null;
 
     setInterval(updateStatus, 1000);
     updateStatus();
@@ -1533,16 +1549,27 @@
       submitBtn.disabled = true;
       submitBtn.textContent = "실시간 행운을 확인하는 중…";
       form.submit();
+      startBridgePolling(pendingNonce);
 
       startResponseTimeout("entry");
     });
 
+    // Apps Script HTML 응답의 postMessage와 JSONP 폴링을 모두 같은 처리기로 받습니다.
+    window.moaBridgePoll = function (data) {
+      handleBridgeResponse(data);
+    };
+
     window.addEventListener("message", function (event) {
-      const data = event.data;
-      if (!data || data.source !== BRIDGE_SOURCE) return;
+      handleBridgeResponse(event.data);
+    });
+
+    function handleBridgeResponse(data) {
+      if (!data || data.status === "pending") return;
+      if (data.source !== BRIDGE_SOURCE) return;
       if (!pendingNonce || data.nonce !== pendingNonce) return;
 
       clearTimeout(submitTimer);
+      stopBridgePolling();
       const requestType = data.responseType || pendingRequestType;
       pendingNonce = "";
       pendingRequestType = "";
@@ -1580,7 +1607,38 @@
       submitBtn.disabled = false;
       submitBtn.innerHTML = '무료로 응모하기 <span aria-hidden="true">→</span>';
       showInlineError(data.message || "응모를 처리하지 못했습니다. 잠시 후 다시 시도해 주세요.");
-    });
+    }
+
+    function startBridgePolling(nonce) {
+      stopBridgePolling();
+      const pollNonce = String(nonce || "");
+      if (!pollNonce) return;
+
+      const poll = function () {
+        if (!pendingNonce || pendingNonce !== pollNonce) {
+          stopBridgePolling();
+          return;
+        }
+
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = APPS_SCRIPT_URL
+          + "?action=poll&nonce=" + encodeURIComponent(pollNonce)
+          + "&callback=moaBridgePoll&_=" + Date.now();
+        script.onload = script.onerror = function () { script.remove(); };
+        document.head.appendChild(script);
+      };
+
+      poll();
+      bridgePollTimer = setInterval(poll, 700);
+    }
+
+    function stopBridgePolling() {
+      if (bridgePollTimer) {
+        clearInterval(bridgePollTimer);
+        bridgePollTimer = null;
+      }
+    }
 
     function syncAllAgreeState() {
       const privacyChecked = privacyAgree.checked;
@@ -1632,6 +1690,7 @@
       sendOtpBtn.textContent = "발송 중…";
       setOtpStatus("인증번호를 발송하고 있습니다…");
       otpRequestForm.submit();
+      startBridgePolling(pendingNonce);
       startResponseTimeout("otp_request");
     }
 
@@ -1661,6 +1720,7 @@
       verifyOtpBtn.textContent = "확인 중…";
       setOtpStatus("인증번호를 확인하고 있습니다…");
       otpVerifyForm.submit();
+      startBridgePolling(pendingNonce);
       startResponseTimeout("otp_verify");
     }
 
@@ -1806,12 +1866,14 @@
       setChoiceButtonsDisabled(true);
       document.getElementById("choiceStatus").textContent = "수령 의사를 저장하는 중입니다…";
       preferenceForm.submit();
+      startBridgePolling(pendingNonce);
       startResponseTimeout("preference");
     }
 
     function startResponseTimeout(type) {
       clearTimeout(submitTimer);
       submitTimer = setTimeout(function () {
+        stopBridgePolling();
         pendingNonce = "";
         pendingRequestType = "";
 
@@ -1838,7 +1900,7 @@
         submitBtn.disabled = false;
         submitBtn.innerHTML = '무료로 응모하기 <span aria-hidden="true">→</span>';
         showInlineError("응답 시간이 초과되었습니다. 네트워크를 확인한 뒤 다시 시도해 주세요.");
-      }, 20000);
+      }, 45000);
     }
 
     function updateStatus() {
